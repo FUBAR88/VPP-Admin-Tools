@@ -4,7 +4,7 @@ ImageSetClass {
  Textures {
   ImageSetTextureClass {
    mpix 1
-   path "{534691EE0479871E}VPPAdminTools/GUI/Textures/dayz_gui_vpp.edds"
+   path "{2D18698DF8F79F08}VPPAdminTools/GUI/Textures/dayz_gui_vpp.edds"
   }
  }
  Images {
@@ -89,6 +89,18 @@ ImageSetClass {
   ImageSetDefClass vpp_icon_webHooks {
    Name "vpp_icon_webHooks"
    Pos 1045 103
+   Size 62 62
+   Flags 0
+  }
+  ImageSetDefClass vpp_icon_attachments {
+   Name "vpp_icon_attachments"
+   Pos 317 212
+   Size 62 62
+   Flags 0
+  }
+  ImageSetDefClass vpp_icon_InvManager {
+   Name "vpp_icon_InvManager"
+   Pos 391 213
    Size 62 62
    Flags 0
   }

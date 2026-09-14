@@ -15,7 +15,7 @@ class VPPAdminHud extends VPPScriptedMenu
 	protected float   m_HoverProgress;
 	protected bool    m_IsHovered;
 	protected float   m_AnimSpeed = 5.0;  //progress units per second
-	protected float   m_PosOffset = 0.110; //multiplier on pos offset
+	protected float   m_PosOffset = 0.150; //multiplier on pos offset
 	
 	//pixel positions for hover effect
 	protected float   m_StartX, m_StartY;
@@ -39,6 +39,8 @@ class VPPAdminHud extends VPPScriptedMenu
 		/*Base actions: Keep here incase other external modules don't call super on DefineButtons()*/
 		InsertButton("MenuPlayerManager", "Player Manager", "set:dayz_gui_vpp image:vpp_icon_players", "#VSTR_TOOLTIP_PLAYERMANAGER");
 		InsertButton("MenuItemManager", "Items Spawner", "set:dayz_gui_vpp image:vpp_icon_item_manager", "#VSTR_TOOLTIP_ITEMMANAGER");
+		InsertButton("MenuInventoryManager", "Inventory Manager", "set:dayz_gui_vpp image:vpp_icon_InvManager", "#VSTR_TOOLTIP_INVENTORYMANAGER");
+		InsertButton("MenuAttachmentsBuilder", "Attachments Builder", "set:dayz_gui_vpp image:vpp_icon_attachments", "#VSTR_TOOLTIP_ATTACHMENTSBUILDER");
 		InsertButton("MenuTeleportManager", "Teleport Tools", "set:dayz_gui_vpp image:vpp_icon_teleport_manager", "#VSTR_TOOLTIP_TELEPORTMANAGER");
 		InsertButton("EspToolsMenu", "ESP Tools", "set:dayz_gui_vpp image:vpp_icon_esp", "ESP/XRay");
 		InsertButton("MenuCommandsConsole", "Console", "set:dayz_gui_vpp image:vpp_icon_cmd_console", "#VSTR_TOOLTIP_COMMANDSMENU");

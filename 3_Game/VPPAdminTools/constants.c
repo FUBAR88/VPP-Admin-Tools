@@ -119,6 +119,15 @@ class VPPATUIConstants
 	const static string BuildingSetEntry 			 = "VPPAdminTools/GUI/Layouts/ObjectManagerUI/BuildingSetEntry.layout";
 	const static string BuildingTracker 			 = "VPPAdminTools/GUI/Layouts/ObjectManagerUI/BuildingTracker.layout";
 
+	//Inventory Manager
+	const static string MenuInventoryManager 		 = "VPPAdminTools/GUI/Layouts/InventoryManager/MenuInventoryManager.layout";
+	const static string InvItemRow 					 = "VPPAdminTools/GUI/Layouts/InventoryManager/InvItemRow.layout";
+	const static string InvCardGrid 				 = "VPPAdminTools/GUI/Layouts/InventoryManager/InvCardGrid.layout";
+
+	//Attachments Builder
+	const static string MenuAttachmentsBuilder 		 = "VPPAdminTools/GUI/Layouts/AttachmentsBuilder/MenuAttachmentsBuilder.layout";
+	const static string AttTreeRow 					 = "VPPAdminTools/GUI/Layouts/AttachmentsBuilder/AttTreeRow.layout";
+
 	//Items Manager
 	const static string MenuItemManager 			 = "VPPAdminTools/GUI/Layouts/ItemManagerUI/MenuItemManager.layout";
 	const static string PopUpCreatePreset 			 = "VPPAdminTools/GUI/Layouts/ItemManagerUI/PopUpCreatePreset.layout";

@@ -31,6 +31,8 @@ modded class PluginManager
 			RegisterPlugin("ServerManager", 				 false,     true);
 			RegisterPlugin("TeleportManager",				 false,		true);
 			RegisterPlugin("VPPItemManager",		         false,		true);
+			RegisterPlugin("VPPInventoryManager",		 false,		true);
+			RegisterPlugin("VPPAttachmentsSpawner",		 false,		true);
 			RegisterPlugin("VPPESPTools",		             false,		true);
 			RegisterPlugin("BuildingSetManager", 			 false, 	true);
 			RegisterPlugin("SteamAPIManager", 			 	 false, 	true);

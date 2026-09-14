@@ -32,6 +32,10 @@ class PermissionManager extends ConfigurablePlugin
 		AddPermissionType({"DeleteObjectAtCrosshair","TeleportToCrosshair","FreeCamera", "RepairVehiclesAtCrosshair"});
 		//Item Manager
 		AddPermissionType({ "MenuItemManager","MenuItemManager:SpawnItem","MenuItemManager:EditPreset","MenuItemManager:SpawnPreset","MenuItemManager:DeletePreset","MenuItemManager:AddPreset" });
+		//Inventory Manager
+		AddPermissionType({ "MenuInventoryManager","MenuInventoryManager:Delete","MenuInventoryManager:Take","MenuInventoryManager:Edit","MenuInventoryManager:Clear","MenuInventoryManager:RepairAll","MenuInventoryManager:Teleport","MenuInventoryManager:Spawn" });
+		//Attachments Builder
+		AddPermissionType({ "MenuAttachmentsBuilder","MenuAttachmentsBuilder:SpawnWeapons","MenuAttachmentsBuilder:SpawnVehicles","MenuAttachmentsBuilder:SpawnClothes" });
 		//Server Manager
 		AddPermissionType({ "MenuServerManager","ServerManager:RestartServer","ServerManager:LockServer","ServerManager:KickAllPlayers" });
 		//Weather Manager
