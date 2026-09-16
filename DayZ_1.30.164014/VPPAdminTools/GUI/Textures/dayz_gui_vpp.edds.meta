@@ -1,0 +1,22 @@
+MetaFileClass {
+ Name "{534691EE0479871E}VPPAdminTools/GUI/Textures/dayz_gui_vpp.edds"
+ Author "desktop-scqak3t"
+ ChangeDate 570763923
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "vppUI.tga"
+   FormatCompress Copy
+   CompressTreshold 100
+   ConversionQuality 1
+   GenerateMips 0
+   MipMapFunction Normalize
+   TiledTexture 0
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

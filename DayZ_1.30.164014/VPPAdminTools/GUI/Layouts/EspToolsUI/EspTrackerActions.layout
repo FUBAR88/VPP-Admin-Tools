@@ -1,0 +1,298 @@
+GridSpacerWidgetClass SpacerGrid {
+ visible 1
+ ignorepointer 1
+ color 0 0 0 0
+ position 0 0
+ size 0.5 0
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ style Colorable
+ Padding 4
+ Margin 2
+ "Size To Content H" 1
+ "Size To Content V" 1
+ content_valign center
+ Columns 2
+ Rows 11
+ {
+  TextWidgetClass Pos {
+   color 0.604 0.627 0.651 1
+   position 0 0
+   size 0 13
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style None
+   text "#VSTR_LBL_POS"
+   font "gui/fonts/sdf_MetronLight72"
+   "exact text" 1
+   "exact text size" 11
+   "size to text h" 1
+   "size to text v" 1
+   "text valign" center
+  }
+  ButtonWidgetClass PosCopy {
+   color 1 1 1 1
+   position 0 0
+   size 72 20
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style VPPButton
+   {
+    TextWidgetClass Pos0 {
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style None
+     text "#VSTR_LBL_COPY"
+     font "gui/fonts/sdf_MetronLight72"
+     "exact text" 1
+     "exact text size" 12
+     "size to text h" 1
+     "size to text v" 1
+     "text valign" center
+    }
+   }
+  }
+  TextWidgetClass LblSelect {
+   color 0.604 0.627 0.651 1
+   position 0 0
+   size 0 13
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style None
+   text "#VSTR_LBL_SELECT_IN_PM"
+   font "gui/fonts/sdf_MetronLight72"
+   "exact text" 1
+   "exact text size" 11
+   "size to text h" 1
+   "size to text v" 1
+   "text valign" center
+  }
+  CheckBoxWidgetClass ChkSelectPlayer {
+   position 0 0
+   size 22 22
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style VPPCheckBox
+  }
+  TextWidgetClass LblTpTo {
+   color 0.604 0.627 0.651 1
+   position 0 0
+   size 0 13
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style None
+   text "#VSTR_LBL_BRING_TO_ME"
+   font "gui/fonts/sdf_MetronLight72"
+   "exact text" 1
+   "exact text size" 11
+   "size to text h" 1
+   "size to text v" 1
+   "text valign" center
+  }
+  ButtonWidgetClass BtnTpToMe {
+   color 1 1 1 1
+   position 0 0
+   size 72 20
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style VPPButton
+   {
+    TextWidgetClass Pos1 {
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style None
+     text "#VSTR_LBL_TO_ME"
+     font "gui/fonts/sdf_MetronLight72"
+     "exact text" 1
+     "exact text size" 12
+     "size to text h" 1
+     "size to text v" 1
+     "text valign" center
+    }
+   }
+  }
+  TextWidgetClass LblTpMe {
+   color 0.604 0.627 0.651 1
+   position 0 0
+   size 0 13
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style None
+   text "#VSTR_LBL_TELEPORT_TO"
+   font "gui/fonts/sdf_MetronLight72"
+   "exact text" 1
+   "exact text size" 11
+   "size to text h" 1
+   "size to text v" 1
+   "text valign" center
+  }
+  ButtonWidgetClass BtnTpMeTo {
+   color 1 1 1 1
+   position 0 0
+   size 72 20
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style VPPButton
+   {
+    TextWidgetClass Pos2 {
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style None
+     text "#VSTR_LBL_GO_TO"
+     font "gui/fonts/sdf_MetronLight72"
+     "exact text" 1
+     "exact text size" 12
+     "size to text h" 1
+     "size to text v" 1
+     "text valign" center
+    }
+   }
+  }
+  TextWidgetClass LblTpBack {
+   color 0.604 0.627 0.651 1
+   position 0 0
+   size 0 13
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style None
+   text "#VSTR_LBL_RETURN_TO"
+   font "gui/fonts/sdf_MetronLight72"
+   "exact text" 1
+   "exact text size" 11
+   "size to text h" 1
+   "size to text v" 1
+   "text valign" center
+  }
+  ButtonWidgetClass BtnTpReturn {
+   color 1 1 1 1
+   position 0 0
+   size 72 20
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style VPPButton
+   {
+    TextWidgetClass Pos3 {
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style None
+     text "#VSTR_LBL_RETURN_PLAYERS"
+     font "gui/fonts/sdf_MetronLight72"
+     "exact text" 1
+     "exact text size" 12
+     "size to text h" 1
+     "size to text v" 1
+     "text valign" center
+    }
+   }
+  }
+  ButtonWidgetClass BtnKill {
+   color 1 1 1 1
+   position 0 0
+   size 72 20
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style VPPButtonDanger
+   {
+    TextWidgetClass Pos5 {
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style None
+     text "#VSTR_TOOLTIP_TITLE_KILL_PLAYERS"
+     font "gui/fonts/sdf_MetronLight72"
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 12
+     "size to text h" 1
+     "size to text v" 1
+     "text valign" center
+    }
+   }
+  }
+  ButtonWidgetClass BtnHeal {
+   color 1 1 1 1
+   position 0 0
+   size 72 20
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style VPPButton
+   {
+    TextWidgetClass Pos4 {
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style None
+     text "#VSTR_LBL_HEAL_PLAYERS"
+     font "gui/fonts/sdf_MetronLight72"
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 12
+     "size to text h" 1
+     "size to text v" 1
+     "text valign" center
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,648 @@
+PanelWidgetClass rootFrame {
+ clipchildren 1
+ inheritalpha 0
+ color 0.749 0.773 0.8 1
+ size 0.52 0.3
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ scriptclass "BanDurationInput"
+ style VPPPanel
+ {
+  PanelWidgetClass title {
+   ignorepointer 1
+   color 0.031 0.035 0.039 0.95
+   position 0 0
+   size 1 0.14
+   halign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style VPPFillRound
+   {
+    ImageWidgetClass ImgTitleIcon {
+     ignorepointer 1
+     color 0.91 0.639 0.239 1
+     position 2 0
+     size 32 32
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:vpp_icons image:history"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+    TextWidgetClass title_text {
+     ignorepointer 1
+     position 32 0
+     size 0.7 1
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     style None
+     text "#VSTR_EDIT_DURATION"
+     font "gui/fonts/sdf_MetronLight72"
+     "bold text" 1
+     "exact text" 1
+     "exact text size" 16
+     "size to text h" 1
+     "size to text v" 1
+     "text valign" center
+    }
+    ImageWidgetClass ImgInfo {
+     ignorepointer 0
+     color 0.604 0.627 0.651 1
+     position 6 0
+     size 24 24
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     scriptclass "ToolTipHandler"
+     image0 "set:vpp_icons image:info"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+   }
+  }
+  TextWidgetClass year {
+   ignorepointer 1
+   color 0.604 0.627 0.651 1
+   position 0.04 0.19
+   size 0.15 0.1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style None
+   text "#VSTR_YEAR"
+   font "gui/fonts/sdf_MetronLight72"
+   "exact text" 1
+   "exact text size" 13
+   "size to text h" 1
+   "size to text v" 1
+   "text halign" center
+   "text valign" center
+  }
+  ButtonWidgetClass brtnYrInc {
+   color 1 1 1 1
+   position 0.04 0.32
+   size 0.15 0.13
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style VPPButtonGhost
+   "no focus" 1
+   {
+    ImageWidgetClass btnImg4 {
+     ignorepointer 1
+     color 0.604 0.627 0.651 1
+     size 18 14
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:vpp_icons image:chevron_up"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+   }
+  }
+  EditBoxWidgetClass InputYear {
+   ignorepointer 0
+   position 0.04 0.46
+   size 0.15 0.16
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   scriptclass "EditBoxEventHandler"
+   style VPPInput
+   text "2024"
+   "Use default text" 0
+   "exact text" 1
+   font "gui/fonts/sdf_MetronLight24"
+   "text halign" center
+  }
+  ButtonWidgetClass brtnYrDec {
+   color 1 1 1 1
+   position 0.04 0.64
+   size 0.15 0.13
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style VPPButtonGhost
+   "no focus" 1
+   {
+    ImageWidgetClass btnImg {
+     ignorepointer 1
+     color 0.604 0.627 0.651 1
+     size 18 14
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:vpp_icons image:chevron_down"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+   }
+  }
+  TextWidgetClass month {
+   ignorepointer 1
+   color 0.604 0.627 0.651 1
+   position 0.236 0.19
+   size 0.15 0.1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style None
+   text "#VSTR_MONTH"
+   font "gui/fonts/sdf_MetronLight72"
+   "exact text" 1
+   "exact text size" 13
+   "size to text h" 1
+   "size to text v" 1
+   "text halign" center
+   "text valign" center
+  }
+  ButtonWidgetClass brtnMnthInc {
+   color 1 1 1 1
+   position 0.236 0.32
+   size 0.15 0.13
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style VPPButtonGhost
+   "no focus" 1
+   {
+    ImageWidgetClass btnImg5 {
+     ignorepointer 1
+     color 0.604 0.627 0.651 1
+     size 18 14
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:vpp_icons image:chevron_up"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+   }
+  }
+  EditBoxWidgetClass InputMonth {
+   ignorepointer 0
+   position 0.236 0.46
+   size 0.15 0.16
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   scriptclass "EditBoxEventHandler"
+   style VPPInput
+   text "6"
+   "Use default text" 0
+   "exact text" 1
+   font "gui/fonts/sdf_MetronLight24"
+   "text halign" center
+  }
+  ButtonWidgetClass brtnMnthDec {
+   color 1 1 1 1
+   position 0.236 0.64
+   size 0.15 0.13
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style VPPButtonGhost
+   "no focus" 1
+   {
+    ImageWidgetClass btnImg0 {
+     ignorepointer 1
+     color 0.604 0.627 0.651 1
+     size 18 14
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:vpp_icons image:chevron_down"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+   }
+  }
+  TextWidgetClass day {
+   ignorepointer 1
+   color 0.604 0.627 0.651 1
+   position 0.432 0.19
+   size 0.15 0.1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style None
+   text "#VSTR_DAY"
+   font "gui/fonts/sdf_MetronLight72"
+   "exact text" 1
+   "exact text size" 13
+   "size to text h" 1
+   "size to text v" 1
+   "text halign" center
+   "text valign" center
+  }
+  ButtonWidgetClass brtnDayInc {
+   color 1 1 1 1
+   position 0.432 0.32
+   size 0.15 0.13
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style VPPButtonGhost
+   "no focus" 1
+   {
+    ImageWidgetClass btnImg6 {
+     ignorepointer 1
+     color 0.604 0.627 0.651 1
+     size 18 14
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:vpp_icons image:chevron_up"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+   }
+  }
+  EditBoxWidgetClass InputDay {
+   ignorepointer 0
+   position 0.432 0.46
+   size 0.15 0.16
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   scriptclass "EditBoxEventHandler"
+   style VPPInput
+   text "25"
+   "Use default text" 0
+   "exact text" 1
+   font "gui/fonts/sdf_MetronLight24"
+   "text halign" center
+  }
+  ButtonWidgetClass brtnDayDec {
+   color 1 1 1 1
+   position 0.432 0.64
+   size 0.15 0.13
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style VPPButtonGhost
+   "no focus" 1
+   {
+    ImageWidgetClass btnImg1 {
+     ignorepointer 1
+     color 0.604 0.627 0.651 1
+     size 18 14
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:vpp_icons image:chevron_down"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+   }
+  }
+  TextWidgetClass hour {
+   ignorepointer 1
+   color 0.604 0.627 0.651 1
+   position 0.628 0.19
+   size 0.15 0.1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style None
+   text "#VSTR_HOUR"
+   font "gui/fonts/sdf_MetronLight72"
+   "exact text" 1
+   "exact text size" 13
+   "size to text h" 1
+   "size to text v" 1
+   "text halign" center
+   "text valign" center
+  }
+  ButtonWidgetClass brtnHrInc {
+   color 1 1 1 1
+   position 0.628 0.32
+   size 0.15 0.13
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style VPPButtonGhost
+   "no focus" 1
+   {
+    ImageWidgetClass btnImg7 {
+     ignorepointer 1
+     color 0.604 0.627 0.651 1
+     size 18 14
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:vpp_icons image:chevron_up"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+   }
+  }
+  EditBoxWidgetClass InputHour {
+   ignorepointer 0
+   position 0.628 0.46
+   size 0.15 0.16
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   scriptclass "EditBoxEventHandler"
+   style VPPInput
+   text "12"
+   "Use default text" 0
+   "exact text" 1
+   font "gui/fonts/sdf_MetronLight24"
+   "text halign" center
+  }
+  ButtonWidgetClass brtnHrDec {
+   color 1 1 1 1
+   position 0.628 0.64
+   size 0.15 0.13
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style VPPButtonGhost
+   "no focus" 1
+   {
+    ImageWidgetClass btnImg2 {
+     ignorepointer 1
+     color 0.604 0.627 0.651 1
+     size 18 14
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:vpp_icons image:chevron_down"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+   }
+  }
+  TextWidgetClass minute {
+   ignorepointer 1
+   color 0.604 0.627 0.651 1
+   position 0.824 0.19
+   size 0.15 0.1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style None
+   text "#VSTR_MINUTE"
+   font "gui/fonts/sdf_MetronLight72"
+   "exact text" 1
+   "exact text size" 13
+   "size to text h" 1
+   "size to text v" 1
+   "text halign" center
+   "text valign" center
+  }
+  ButtonWidgetClass brtnMinInc {
+   color 1 1 1 1
+   position 0.824 0.32
+   size 0.15 0.13
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style VPPButtonGhost
+   "no focus" 1
+   {
+    ImageWidgetClass btnImg8 {
+     ignorepointer 1
+     color 0.604 0.627 0.651 1
+     size 18 14
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:vpp_icons image:chevron_up"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+   }
+  }
+  EditBoxWidgetClass InputMinute {
+   ignorepointer 0
+   position 0.824 0.46
+   size 0.15 0.16
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   scriptclass "EditBoxEventHandler"
+   style VPPInput
+   text "30"
+   "Use default text" 0
+   "exact text" 1
+   font "gui/fonts/sdf_MetronLight24"
+   "text halign" center
+  }
+  ButtonWidgetClass brtnMinDec {
+   color 1 1 1 1
+   position 0.824 0.64
+   size 0.15 0.13
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style VPPButtonGhost
+   "no focus" 1
+   {
+    ImageWidgetClass btnImg3 {
+     ignorepointer 1
+     color 0.604 0.627 0.651 1
+     size 18 14
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:vpp_icons image:chevron_down"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+   }
+  }
+  CheckBoxWidgetClass PermaTick {
+   ignorepointer 0
+   position 0.04 0.015
+   size 0.4 0.12
+   valign bottom_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style VPPCheckBox
+   font "gui/fonts/sdf_MetronLight72"
+   {
+    TextWidgetClass TxtPerma {
+     ignorepointer 1
+     position 28 0
+     size 1 1
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     style None
+     text "#VSTR_BAN_PERMA"
+     font "gui/fonts/sdf_MetronLight72"
+     "exact text" 1
+     "exact text size" 13
+     "size to text h" 1
+     "size to text v" 1
+     "text valign" center
+    }
+   }
+  }
+  ButtonWidgetClass btnCancel {
+   color 1 1 1 1
+   position 0.04 0.01
+   size 0.22 0.12
+   halign right_ref
+   valign bottom_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style VPPButtonGhost
+   font "gui/fonts/sdf_MetronLight72"
+   "bold text" 1
+   {
+    TextWidgetClass LblCancel {
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text "#VSTR_CANCEL"
+     font "gui/fonts/sdf_MetronLight24"
+     "exact text" 1
+     "exact text size" 14
+     "size to text h" 1
+     "size to text v" 1
+     "text halign" center
+     "text valign" center
+    }
+   }
+  }
+  ButtonWidgetClass btnApply {
+   color 1 1 1 1
+   position 0.28 0.01
+   size 0.22 0.12
+   halign right_ref
+   valign bottom_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style VPPButton
+   font "gui/fonts/sdf_MetronLight72"
+   "bold text" 1
+   {
+    TextWidgetClass LblApply {
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text "#VSTR_APPLY"
+     font "gui/fonts/sdf_MetronLight24"
+     "exact text" 1
+     "exact text size" 14
+     "size to text h" 1
+     "size to text v" 1
+     "text halign" center
+     "text valign" center
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,123 @@
+PanelWidgetClass dropdown_selector {
+ clipchildren 0
+ inheritalpha 0
+ ignorepointer 0
+ color 1 1 1 1
+ position 0 0
+ size 1 1
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ style VPPInputPanel
+ {
+  TextWidgetClass dropdown_text {
+   clipchildren 0
+   ignorepointer 1
+   position 4 0
+   size 0.88 1
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   style None
+   font "gui/fonts/sdf_MetronLight72"
+   "text offset" 10 0
+   "exact text" 1
+   "exact text size" 14
+   "text valign" center
+  }
+  ButtonWidgetClass dropdown_selector_button {
+   disabled 0
+   clipchildren 0
+   ignorepointer 0
+   color 1 1 1 1
+   position 0 0
+   size 1 1
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   style VPPButtonGhost
+   "no focus" 1
+   {
+    ImageWidgetClass expand_image {
+     visible 1
+     clipchildren 0
+     inheritalpha 1
+     ignorepointer 1
+     color 0.604 0.627 0.651 1
+     position 6 0
+     size 16 16
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:vpp_icons image:chevron_down"
+     mode blend
+     "src alpha" 1
+     "clamp mode" clamp
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+    ImageWidgetClass collapse_image {
+     visible 0
+     clipchildren 0
+     inheritalpha 1
+     ignorepointer 1
+     color 0.604 0.627 0.651 1
+     position 6 0
+     size 16 16
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:vpp_icons image:chevron_up"
+     mode blend
+     "src alpha" 1
+     "clamp mode" clamp
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+   }
+  }
+  ScrollWidgetClass dropdown_container {
+   visible 0
+   clipchildren 0
+   ignorepointer 0
+   position 0 1
+   size 1 160
+   halign center_ref
+   hexactpos 1
+   vexactpos 0
+   hexactsize 0
+   vexactsize 1
+   style VPPScroll
+   "no focus" 0
+   "Scrollbar V" 1
+   {
+    GridSpacerWidgetClass dropdown_content {
+     visible 1
+     clipchildren 0
+     inheritalpha 0
+     ignorepointer 1
+     position 0 0
+     size 1 1
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     Padding 0
+     Margin 0
+     "Size To Content V" 1
+     Columns 1
+     Rows 50
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,106 @@
+PanelWidgetClass PanelHeader {
+ inheritalpha 1
+ ignorepointer 1
+ color 0.039 0.043 0.047 0.9
+ size 0.5 0.6
+ halign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ scriptclass "VPPEspCatagoryHeader"
+ style VPPFillRound
+ {
+  RichTextWidgetClass CatagoryTitle {
+   visible 1
+   clipchildren 1
+   ignorepointer 1
+   color 0.91 0.639 0.239 1
+   position 0 0
+   size 1 0.092
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   text "CATEGORY TITLE"
+   font "gui/fonts/sdf_MetronLight72"
+   "text spacing" 0 5
+   "outline size" 1
+   "outline color" 0 0 0 0.6
+   "bold text" 1
+   "exact text" 1
+   "exact text size" 12
+   "size to text h" 0
+   "size to text v" 1
+   "text halign" center
+   "text valign" center
+   wrap 1
+  }
+  ButtonWidgetClass BtnCollapse {
+   ignorepointer 0
+   position 0.01 0
+   size 20 20
+   halign right_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 1
+   vexactsize 1
+   style VPPButtonGhost
+   {
+    ImageWidgetClass IconCollapse {
+     ignorepointer 1
+     color 0.604 0.627 0.651 1
+     position 0 0
+     size 16 16
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:vpp_icons image:chevron_down"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+   }
+  }
+  ButtonWidgetClass BtnClose {
+   visible 0
+   ignorepointer 0
+   position 0.12 0
+   size 18 18
+   halign right_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 1
+   vexactsize 1
+   style VPPButtonGhost
+   {
+    ImageWidgetClass IconClose {
+     visible 1
+     ignorepointer 1
+     color 0.761 0.271 0.271 1
+     position 0 0
+     size 14 14
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:vpp_icons image:x"
+     mode blend
+     "src alpha" 1
+     "stretch mode" stretch_w_h
+     filter 1
+    }
+   }
+  }
+ }
+}
